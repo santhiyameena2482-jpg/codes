@@ -1,0 +1,31 @@
+<!-- Task 5: Element Recycling: c
+Use removeChild() to remove a specific list item, then store it in a variable and append() it to a different list. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ulist">
+        <li >book 1</li>
+         <li>book 2</li>
+          <li>book 3</li>
+           <li id="list4">book 4</li>
+    </ul>
+     <ul id="ulist2">
+        <li >book 1</li>
+         <li>book 2</li>
+          <li>book 3</li>
+          </ul>
+  <script>
+    const ulist2=document.getElementById("ulist2");
+    const ulist=document.getElementById("ulist");
+    const list4=document.getElementById("list4");
+    const rc=ulist.removeChild(list4);
+    console.log(rc);
+    ulist2.append(list4);
+ </script>
+</body>
+</html>
