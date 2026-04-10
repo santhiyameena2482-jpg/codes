@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin:0%;
+        box-sizing: border-box;
+        
+      }
+        #treasure-chest{
+             font-size: 250px;
+             background-color: black;
+             border: 2px solid; 
+             height:350px;
+             width:350px;
+      
+        }
+        #bd {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        height: 100vh;
+        
+        }
+     
+    </style>
+</head>
+<body id="bd">
+    <div id="treasure-chest">
+        <p>📦</p>
+    </div>
+    <script>
+      const chest=document.getElementById("treasure-chest");
+      chest.onmouseenter= function(e){
+        e.target.textContent="💎";
+        e.target.style.backgroundColor="gold";
+      };
+      chest.onmouseleave=function(e){
+        e.target.textContent="📦";
+        e.target.style.backgroundColor="black";
+      };
+    </script>
+</body>
+</html>
