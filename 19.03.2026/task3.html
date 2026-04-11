@@ -14,12 +14,12 @@
         </div>
         <button id="btn">click here</button>
         <script>
+             const parent=document.getElementById("parent");
+            const last=document.getElementById("last");
             const btn=document.getElementById("btn");
             btn.addEventListener("click",function(){
                 parent.removeChild(last);
             });
-            const parent=document.getElementById("parent");
-            const last=document.getElementById("last");
-        </script>
+            </script>
     </body>
     </html>
