@@ -58,7 +58,6 @@
   <header>✨ Wings of Wonder✨</header>
   <p>Explore colorful wings, unique species, and amazing bird facts</p>
     <div id="birds">
-      <span></span>
         <div id="bird">
         <p id="tc1"><img  src="images.jpg" alt="Eagle"></p>
         </div>
@@ -76,13 +75,13 @@
     <footer>“Where every bird tells a story” 🕊️
 © 2026 Birds Gallery | Made with Passion</footer>
     <script>
-      const chest=document.getElementById("tc1");
-      chest.onmouseenter= function(e){
+      const bird1=document.getElementById("tc1");
+      bird1.onmouseenter= function(e){
         e.target.innerHTML="<b>Eagle</b><br>Eagles have eyes that are about 4–5 times sharper than humans, letting them spot prey from kilometers away.Some eagles can lock their talons and cannot release without bending their legs again";
        
       }
     
-      chest.onmouseleave= function(e){
+      bird1.onmouseleave= function(e){
         e.target.innerHTML="<img src='images.jpg'>";
     };
     const bird2=document.getElementById("tc2");
