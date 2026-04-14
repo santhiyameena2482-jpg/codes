@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin:0%;
+        box-sizing: border-box;
+        
+      }
+      #bd {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+           }
+       
+        #birds{
+             height:100vh;
+             width:100%;
+             background-color:lightslategray;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             gap:20px;
+        }
+         #bird {
+            width: 250px;
+            height: 200px;
+            background-color:lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+         }
+         img{
+          padding: 5px;
+          height: 200px;
+          width: 250px;
+          
+         }
+       #hd{
+        text-align: center;
+        font-size: 20px;
+    }
+        #bt{
+            margin-left: 1250px;
+            width: 100px;
+           
+        }
+         #btn2{
+            border-radius: 5px;
+            border-width: 3px;
+            padding: 3px;
+            background-color: black;
+            color:white;
+         }
+         #btn3{
+            border-radius: 5px;
+            border-width: 3px;
+            padding: 3px;
+            background-color:white;
+            color:black;
+         }
+         footer{
+            font-size: 15px;
+         }
+      
+    </style>
+</head>
+  <body id="bd">
+    <div id="hd">
+  <header>✨ Wings of Wonder✨
+    <div id="bt"><button id="btn2">Dark</button><button id="btn3">white</button></div></header>
+  <p>Explore colorful wings, unique species, and amazing bird facts</p>
+  </div>
+    <div id="birds">
+        <div id="bird">
+        <p id="tc1"><img  src="images.jpg" alt="Eagle"></p>
+        </div>
+         <div id="bird">
+        <p id="tc2"><img src="images2.jpg" alt="cuckoo"></p>
+        </div>
+        <div id="bird">
+        <p id="tc3"><img src="images3.jpg" alt="tocotoucan" ></p>
+        </div>
+        <div id="bird"> 
+          <p id="tc4"><img  src="images4.jpg" alt="parrot"></p>
+        </div>
+       
+    </div>
+    <footer id="ft">“Where every bird tells a story” 🕊️
+© 2026 Birds Gallery | Made with Passion</footer>
+    <script>
+        const bd=document.getElementById("bd");
+        const btn2=document.getElementById("btn2");
+        const hd=document.getElementById("hd");
+        const ft=document.getElementById("ft");
+      const bird1=document.getElementById("tc1");
+      bird1.onmouseenter= function(e){
+        e.target.innerHTML="<b>Eagle</b><br>Eagles have eyes that are about 4–5 times sharper than humans, letting them spot prey from kilometers away.Some eagles can lock their talons and cannot release without bending their legs again";
+       
+      }
+    
+      bird1.onmouseleave= function(e){
+        e.target.innerHTML="<img src='images.jpg'>";
+    };
+    const bird2=document.getElementById("tc2");
+      bird2.onmouseenter= function(e){
+        e.target.innerHTML="<b>Cuckoo</b><br>The cuckoo is known for its sweet and unique call, often heard more than seen.It does not build its own nest and lays eggs in other birds’ nests.Cuckoo chicks grow quickly and get more care from the host bird.";
+      };
+    
+      bird2.onmouseleave= function(e){
+        e.target.innerHTML="<img  src='images2.jpg'>";
+    }
+    const bird3=document.getElementById("tc3");
+      bird3.onmouseenter= function(e){
+        e.target.innerHTML="<b>Parrot</b><br>Parrots are intelligent birds known for their ability to mimic human speech.They have strong, curved beaks that help them crack nuts and seeds.Parrots are social birds and often live in groups called flocks.<br>";
+      }
+      
+        bird3.onmouseleave= function(e){
+        e.target.innerHTML="<img src='images3.jpg' >";
+    }
+      const bird4=document.getElementById("tc4");
+      bird4.onmouseenter= function(e){
+        e.target.innerHTML="<b>Toco Toucan</b><br>The Toco Toucan is known for its large, colorful orange beak, which is surprisingly light.It uses its beak to reach fruits on branches that are hard to access.Despite its size, the beak also helps regulate body temperature.";}
+        bird4.onmouseleave= function(e){
+        e.target.innerHTML="<img  src='images4.jpg'>";
+    }
+    btn2.onclick=function(e){
+        bd.style.backgroundColor="black";
+        hd.style.color="white";
+        ft.style.color="white";
+
+    }
+    btn3.onclick=function(e){
+        bd.style.backgroundColor="white";
+         hd.style.color="black";
+        ft.style.color="black";
+
+        
+        
+    }
+    </script>
+</body>
+</html>
